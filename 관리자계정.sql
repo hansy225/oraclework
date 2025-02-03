@@ -38,5 +38,3 @@ ALTER USER tjoeun default tablespace users quota unlimited on users;
 -- workbook 사용자 만들기
 ALTER SESSION SET "_oracle_script" = true;
 CREATE USER workbook IDENTIFIED BY 1234;
-
-
