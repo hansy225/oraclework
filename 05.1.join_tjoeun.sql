@@ -233,7 +233,6 @@ SELECT EMP_NAME, SALARY, SAL_LEVEL
 FROM EMPLOYEE
 JOIN SAL_GRADE ON (SALARY BETWEEN MIN_SAL AND MAX_SAL);
 -- JOIN SAL_GRADE ON (SALARY >= MIN_SAL AND SALARY <= MAX_SAL);
-
 --================================================
 --                                     4. 자체 조인
 --================================================
@@ -259,7 +258,6 @@ WHERE E.MANAGER_ID = M.EMP_ID(+);
 SELECT E.EMP_ID, E.EMP_NAME, E.DEPT_CODE, M.EMP_ID, M.EMP_NAME, M.DEPT_CODE
 FROM EMPLOYEE E
 LEFT JOIN EMPLOYEE M ON (E.MANAGER_ID = M.EMP_ID);
-
 --==============================================================
 --                                                      다중 조인                                             
 --==============================================================
