@@ -56,3 +56,6 @@ ALTER USER ddl default tablespace users quota unlimited on users;
 -- tjoeun view 생성 권한
 GRANT CREATE VIEW TO tjoeun;
 
+-- DDL VIEW 생성 권한
+GRANT CREATE VIEW TO workbook;
+
